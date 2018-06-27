@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<!-- Fire off masthead download early
+	<link rel="preload" href="/img/css/masthead-small.jpg" as="image" media="(max-width: 719px)">
+	<link rel="preload" href="/img/css/masthead-medium.jpg" as="image" media="(min-width: 720px) and (max-width: 1023px)">
+	<link rel="preload" href="/img/css/masthead-large.jpg" as="image" media="(min-width: 1024px)"> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="{{site.baseurl}}/js/bootstrap.js"></script>
+	<script async src="{{site.baseurl}}/js/script.js"></script>
+  <link rel="stylesheet" href="{{site.baseurl}}/css/master.css">
+
+	<title>{% if page.title %}{{page.title}} | {% endif %}David Ullauri</title>
+	<!-- <link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/img/favicon.png"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+	<div id="site-wrapper">
+		<header id="header-wrap">
+			<div class="container">
+				<div id="logo">
+					<a href="{{site.baseurl}}/">David Ullauri</a>
+				</div>
+				<div class="menu-btn">
+					<button class='navbar-btn btn-link pull-right' data-target='#modalNavigation' data-toggle='modal' type='button'>
+						<span class='sr-only'>Open navigation</span>
+						<div class="menu icon"></div>
+					</button>
+				</div>
+				<nav id="primary-menu">
+					<div class="menu-links">
+						{% include nav.html %}
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+		  <button aria-label='Close' class='close navbar-btn' data-dismiss='modal' type='button'>
+		    <span class='sr-only'>Close navigation</span>
+		    <div class="close-icon"></div>
+		  </button>
+		  <div class='modal-dialog'>
+		    <nav id="mobile-primary-menu">
+					<div class="list-group">
+						{% include nav.html %}
+					</div>
+		    </nav>
+		  </div>
+		</div>
+
+    {{content}}
+
+    <footer id="footer">
+			<div class="copyrights">
+				<div class="container">
+					<div id="copyright">
+						&copy; 2018 by David Ullauri<br>
+					</div>
+					<div class="social-icons">
+						<a id="linkedin" href="https://linkedin.com/in/david-ullauri-118a0ab8/">
+							<img src="{{site.baseurl}}/img/company/linkedin.svg" alt="linkedin">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
