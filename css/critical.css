@@ -103,7 +103,7 @@ p, pre, ul, ol, dl, dd, blockquote, address, table, fieldset, form {
   display: table-cell;
   vertical-align: middle;
   margin: auto 0;
-  width: 50%;
+  margin-right: auto;
 }
 #logo a {
   color: #fff;
