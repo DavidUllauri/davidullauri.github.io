@@ -85,6 +85,7 @@ p, pre, ul, ol, dl, dd, blockquote, address, table, fieldset, form {
   z-index: 1030;
 }
 #header-wrap .container {
+  display: flex;
   display: -ms-grid;
   -ms-grid-columns: 100% 0 100%;
   display: grid;
@@ -102,6 +103,7 @@ p, pre, ul, ol, dl, dd, blockquote, address, table, fieldset, form {
   display: table-cell;
   vertical-align: middle;
   margin: auto 0;
+  width: 50%;
 }
 #logo a {
   color: #fff;
@@ -112,8 +114,9 @@ p, pre, ul, ol, dl, dd, blockquote, address, table, fieldset, form {
 
 .menu-btn {
   -ms-grid-column: 2;
-  display: inline-block;
   align-self: center;
+  display: inline-block;
+  margin-left: auto;
 }
 
 .navbar-btn {
