@@ -1,0 +1,245 @@
+/* ----------------------------------------------------------------
+	Basic
+-----------------------------------------------------------------*/
+:active,
+:focus { outline: none !important; }
+
+
+/* ----------------------------------------------------------------
+	Typography
+-----------------------------------------------------------------*/
+body {
+  color: #000;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 16px;
+  font-family:
+  -apple-system, BlinkMacSystemFont,  /* Safari Mac/iOS, Chrome */
+  "Segoe UI", Roboto, Oxygen, /* Windows, Android, KDE */
+  Ubuntu, Cantarell, "Fira Sans", /* Ubuntu, Gnome, Firefox OS */
+  "Droid Sans", "Helvetica Neue", sans-serif; /* Old Android */
+}
+
+
+/* ----------------------------------------------------------------
+	Basic Layout Styles
+-----------------------------------------------------------------*/
+h1, h2, h3,
+h4, h5, h6 {
+    color: #444;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 { font-size: 36px; }
+
+h2 { font-size: 30px; }
+
+h3 { font-size: 24px; }
+
+h4 { font-size: 18px; }
+
+p, pre, ul, ol, dl, dd, blockquote, address, table, fieldset, form {
+    margin-bottom: 30px;
+}
+
+
+/* ----------------------------------------------------------------
+	Helper Classes
+-----------------------------------------------------------------*/
+#site-wrapper {
+	position: relative;
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.bg-grey {
+    background-color: #f8f9fa !important;
+}
+
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+#header-wrap {
+  position: relative;
+  background-color: #222;
+  height: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+}
+#header-wrap .container {
+  display: -ms-grid;
+  -ms-grid-columns: 100% 0 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8px 16px;
+}
+
+@media (min-width: 1024px) {
+  .navbar-shrink { background-color: #222 !important; }
+  .navbar-shrink .container { padding: 8px 16px !important; }
+}
+
+#logo {
+  -ms-grid-column: 1;
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto 0;
+}
+#logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-btn {
+  -ms-grid-column: 2;
+  display: inline-block;
+  align-self: center;
+}
+
+.navbar-btn {
+  color: #fff;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 8px 0;
+  height: 12px
+}
+
+#primary-menu {
+  -ms-grid-column: 2;
+  display: none;
+  align-self: center;
+}
+
+/* ----------------------------------------------------------------
+	Menu modal
+-----------------------------------------------------------------*/
+.modal {
+  display: none;
+  position: fixed;
+}
+.fade {
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.portfolio-modal {
+  background-color: #fff;
+}
+
+/* ----------------------------------------------------------------
+	Masthead
+-----------------------------------------------------------------*/
+section.masthead {
+    text-align: center;
+    background-color: #222;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.masthead-home_text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.masthead-home_text h1,
+.masthead-home_text h2 {
+    color: white;
+    margin-bottom: 25px;
+}
+.masthead-home_text h1 {
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.masthead-home_text h2 {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+
+/* ----------------------------------------------------------------
+	Page Title
+-----------------------------------------------------------------*/
+#post-header {
+    text-align: center;
+}
+#post-header h1 {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+#post-header h2 {
+    font-size: 20px;
+    color: #555;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+
+/* ----------------------------------------------------------------
+	Content
+-----------------------------------------------------------------*/
+#content {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.content-wrap {
+  padding: 65px 0;
+  line-height: 1.8;
+}
+
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
+#footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.social-icons {
+    font-size: 30px;
+    margin-top: 16px;
+}
+.social-icons a {
+  background-color: #444;
+  border-radius: 20%;
+  display: inline-flex;
+  margin-right: 16px;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+}
+.social-icons a img {
+  margin: 0 auto;
+}

@@ -1,0 +1,202 @@
+/* ----------------------------------------------------------------
+	Responsive CSS
+-------------------------------------------------------------------
+
+	- Basic
+	- Typography
+	- Basic Layout Styles
+	- Helper Classes
+	- Sections
+	- Flex Slider
+	- Top Bar TODO
+	- Header
+		- Logo
+		- Primary Menu
+		- Mega Menu
+		- Top Search
+		- Sticky Header
+		- Page Menu
+		- Side Header
+  - Masthead
+	- Side Panel TODO
+	- Page Title
+	- Content
+	- Portfolio
+    - Portfolio Modal
+  - Services
+	- Blog TODO
+	- Forms TODO
+	- Google Maps TODO
+	- Error 404 TODO
+	- Toastr Notifications TODO
+	- Footer
+	- Widgets TODO
+		- Tag Cloud
+		- Links
+		- Testimonial & Twitter
+		- Quick Contact Form
+		- Newsletter
+		- Twitter Feed
+		- Navigation Tree
+	- Bootstrap Specific TODO
+	- Page Transitions TODO
+	- Youtube Video Backgrounds TODO
+
+---------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	Basic
+-----------------------------------------------------------------*/
+@media (max-width: 280px) {
+  body {
+    display: -webkit-inline-box;
+  }
+}
+
+/* ----------------------------------------------------------------
+	Typography
+-----------------------------------------------------------------*/
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+    line-height: 1.58;
+  }
+}
+
+/* ----------------------------------------------------------------
+	Basic Layout Styles
+-----------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  article.container {
+    max-width: 80%;
+  }
+}
+
+/* ----------------------------------------------------------------
+	Helper Classes
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Sections
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+@media (max-width: 280px) {
+  #logo a { font-size: 14px; }
+}
+
+@media (min-width: 1024px) {
+  #header-wrap.transparent { background: linear-gradient( #222, transparent ); }
+  #header-wrap .container {
+    padding-top: 40px;
+    padding-bottom: 24px;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+  }
+
+  #logo a {
+    font-size: 22px;
+  }
+  .menu-btn {
+    display: none;
+  }
+
+  #primary-menu {
+    display: block;
+  }
+}
+
+/* ----------------------------------------------------------------
+	Menu modal
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Masthead
+-----------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+  .masthead-home_text {
+      padding-top: 225px;
+      padding-bottom: 200px;
+  }
+  .masthead-home_text h1 {
+      font-size: 75px;
+      line-height: 75px;
+  }
+  .masthead-home_text h2 {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 50px;
+  }
+
+  .masthead-empty {
+    height: 200px;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+	Page Title
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Content
+-----------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+  .author-image {
+    margin: auto;
+    width: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  .author-image {
+    margin: auto;
+    width: 300px;
+  }
+}
+
+/* ----------------------------------------------------------------
+	Portfolio
+-----------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  .modal-content .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 1024px) {
+  .main-grid { grid-template-columns: 1fr 1fr 1fr; }
+
+  .modal-content .container {
+    max-width: 970px;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+	Services
+-----------------------------------------------------------------*/
+@media (min-width: 768px) {
+  #services p {
+    font-size: 18px;
+    color: #555;
+  }
+
+  .grid-item {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
