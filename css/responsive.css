@@ -24,6 +24,7 @@
 	- Portfolio
     - Portfolio Modal
   - Services
+  - About
 	- Blog TODO
 	- Forms TODO
 	- Google Maps TODO
@@ -195,6 +196,19 @@
     width: 100%;
     margin: 0 auto;
   }
+}
+
+/* ----------------------------------------------------------------
+	About
+-----------------------------------------------------------------*/
+#about-content p,blockquote,pre {
+  margin-left: 60px;
+}
+.author-image {
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 0.5em;
+  shape-outside: circle();
 }
 
 /* ----------------------------------------------------------------
