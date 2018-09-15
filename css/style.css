@@ -447,7 +447,7 @@ pre {
 #portfolio .grid-item .portfolio-link {
   position: relative;
   display: block;
-  max-width: 400px;
+  max-width: 350px;
   margin: 0 auto;
   cursor: pointer;
 }
@@ -481,7 +481,7 @@ pre {
   text-underline-position: under;
 }
 #portfolio .grid-item .grid-caption {
-  max-width: 400px;
+  max-width: 350px;
   margin: auto;
   padding: 25px 0;
   background-color: white;
@@ -622,7 +622,7 @@ pre {
 #services p { text-align: center; }
 
 .grid-item {
-  max-width: 400px;
+  max-width: 350px;
   margin: auto;
 }
 
